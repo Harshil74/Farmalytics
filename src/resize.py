@@ -12,7 +12,7 @@ def resize():
             im = Image.open(path + item)
             f, e = os.path.splitext(path + item)
             imResize = im.resize((224, 138), Image.ANTIALIAS)
-            imResize.save('D:/workspace/PMMS/dataset/augmented-data/flower/'+ str(count) + '.jpg', 'JPEG', quality=5000)
+            imResize.save('.../path_to_save/'+ str(count) + '.jpg', 'JPEG', quality=5000)
             count = count + 1
             print(count)
 
